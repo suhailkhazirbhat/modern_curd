@@ -137,7 +137,7 @@ const Register = () => {
       {
         showspin ? <Spiner /> : <div className="container">
           <h2 className='text-center mt-1'>Register Your Details</h2>
-          <Card className='shadow mt-3 p-3'>
+          <Card className='card'>
             <div className="profile_div text-center">
               <img src={preview ? preview : "/man.png"} alt="img" />
             </div>

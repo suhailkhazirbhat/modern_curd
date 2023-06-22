@@ -59,6 +59,8 @@ const Home = () => {
   // export user
   const exportuser = async()=>{
     const response = await exporttocsvfunc();
+
+    console.log("aaaaaaaaaaaaaaaaae",response)
     if(response.status === 200){
       window.open(response.data.downloadUrl,"blank")
     }else{
@@ -121,7 +123,7 @@ const Home = () => {
               </Form>
             </div>
             <div className="add_btn">
-              <Button variant="primary" onClick={adduser}> <i class="fa-solid fa-plus"></i>&nbsp; Add User</Button>
+              <Button className='export_btn' onClick={adduser}> <i ></i>&nbsp; Add User</Button>
             </div>
           </div>
           {/* export,gender,status */}
